@@ -50,8 +50,17 @@ async function login (input){
   const passwordSucess= await bcrypt.compare(password, userFound.password);
   if(!passwordSucess) throw new Error("Error en contraseña");
 
-  return {
+  const expiredToken=()=>{
     token:createToken(userFound,process.env.SECRET_KEY,"24h")
+    setTimeout(() => {
+      localStorage.removeItem("token")
+    }, 86400000);
+    
+  }
+
+  return {
+    
+    
   }
 }
 
