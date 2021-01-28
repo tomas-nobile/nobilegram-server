@@ -53,7 +53,7 @@ async function login (input){
  
 
   return {
-    token:createToken(userFound,process.env.SECRET_KEY,"12m")
+    token:createToken(userFound,process.env.SECRET_KEY,"1y")
     
   }
 }
