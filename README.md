@@ -1,4 +1,5 @@
-netlify: https://nobilegram.netlify.app/
 # nobilegram-server
 
-https://nobilegram.herokuapp.com/
+Netlify: https://nobilegram.netlify.app/
+
+Heroku https://nobilegram.herokuapp.com/
